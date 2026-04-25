@@ -38,8 +38,7 @@ def main():
                 dihapus = Wishlist.pop(nomor - 1)
                 print(f"{dihapus} sudah di beli dan di hapus dari list")
             except ValueError:
-                print("Nomor tidak valid, masukkan nomor yang ada di daftar!")
-            
+                print("Nomor tidak valid, masukkan nomor yang ada di daftar!") 
         elif choice == 4:
             running = False
             print("Program selesai.")
