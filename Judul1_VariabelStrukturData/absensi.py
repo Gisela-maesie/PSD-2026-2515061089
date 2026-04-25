@@ -1,1 +1,0 @@
-print("Tugas sedang dikerjakan")
