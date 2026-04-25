@@ -1,8 +1,8 @@
 def menu():
     print("Wishlist Belanja")
     print("1. Tambahkan barang baru")
-    print("2. Tampilkan semua barang")
-    print("3. Hapus barang yang sudah di beli")
+    print("2. Tampilkan isi wishlist belanja")
+    print("3. Hapus barang yang sudah dibeli")
     print("4. Keluar")
     
     
@@ -26,7 +26,7 @@ def main():
                 List_barang.append(barang)
                 print(f"{barang} berhasil ditambahkan")
         elif choice == 2:
-            print("Daftar wishlist barang: ")
+            print("Daftar wishlist barang anda: ")
             if not List_barang:
                 print("Daftar wishlist masih kosong")
             else:
@@ -34,17 +34,17 @@ def main():
                     print(f"{i}. {item}")
         elif choice == 3:
             if not List_barang:
-                print("Tidak ada barang yang bisa di hapus")
+                print("Tidak ada barang di wishlist yang bisa dihapus")
                 continue
             for i, item in enumerate(List_barang, 1):
                 print(f"{i}. {item}")
             try:
-                nomor = int(input("Masukkan nomor barang yang sudah di beli: "))
+                nomor = int(input("Masukkan nomor barang yang sudah dibeli: "))
                 if 1 <= nomor <= len(List_barang):
                     dihapus = List_barang.pop(nomor - 1)
-                    print(f"{dihapus} sudah di beli dan di hapus dari wishlist")
+                    print(f"{dihapus} sudah dibeli dan dihapus dari wishlist")
                 else:
-                    print("Nomor tersebut tidak ada di dalam daftar")
+                    print("Nomor tersebut tidak ada di dalam daftar wishlist anda")
             except ValueError:
                 print("Input salah, masukkan nomor (angka)") 
         elif choice == 4:
