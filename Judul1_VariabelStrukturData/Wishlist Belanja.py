@@ -2,7 +2,7 @@ def menu():
     print("Wishlist Belanja")
     print("1. Tambah Barang")
     print("2. Tampilkan Semua Barang")
-    print("3. Hapus Barang")
+    print("3. Hapus Barang (yang sudah di beli)")
     print("4. Keluar")
     
     
