@@ -170,4 +170,83 @@ __print("Pilihan tidak tersedia")__ : Menampilkan pesan "Pilihan tidak tersedia"
 __if __name__ == "__main__"__ : Memastikan fungsi main() hanya dijalankan saat file ini dieksekusi secara langsung  
 
 
-__main()__ : Perintah terakhir untuk mengeksekusi fungsi utama program
+__main()__ : Perintah terakhir untuk mengeksekusi fungsi utama program  
+
+
+__d. Output Program__  
+
+
+<img width="1096" height="1034" alt="Screenshot 2026-04-26 153653" src="https://github.com/user-attachments/assets/1914ab50-82f7-464c-9508-459baff5c37c" />
+<img width="1094" height="994" alt="Screenshot 2026-04-26 153738" src="https://github.com/user-attachments/assets/a46abe57-afc2-4bd8-85cb-2f31fbeda4a0" />
+<img width="1093" height="996" alt="Screenshot 2026-04-26 153811" src="https://github.com/user-attachments/assets/9580eef5-9b69-4d2f-b2ad-87197255201f" />
+<img width="1099" height="271" alt="Screenshot 2026-04-26 153847" src="https://github.com/user-attachments/assets/fcd54918-562f-41b8-b08e-109fab2ee6e9" />  
+
+
+__-Menampilkan menu utama__  
+
+
+Setiap kali perulangan dimulai program akan memanggil fungsi menu(), yang akan menampilkan pesan:  
+
+
+Wishlist Belanja   
+
+
+1. Tambahkan barang baru
+
+
+2. Tampilkan isi wishlist
+
+
+3. Hapus barang yang sudah dibeli
+
+
+4. Selesai
+
+
+ini adalah tampilan yang berasal dari fungsi def menu(). program yang sudah berjalan setelah menampilkan isi dari def menu() maka akan langsung menampilkan pesan "Pilihan:", disini pengguna diminta untuk memasukkan nomor dari fungsi def menu() yang ingin dia jalankan  
+
+
+Jika pada saat memasukkan nomor pada pesan "Pilihan:" tadi pengguna memasukkan pilihan selain angka maka program akan menjalankan except ValueError dan menampilkan pesan "Masukkan angka yang valid!". Dan apabila saat memasukkan nomor pada pesan "Pilihan:" tadi pengguna memasukkan angka yang tidak ada di menu misalkan angka 5 maka program akan menjalankan bagian else dan menampilkan pesan "Pilihan tidak tersedia"   
+
+
+__-Proses tambah barang (pilihan 1)__  
+
+
+Ketika pengguna memilih pilihan 1 maka program akan masuk ke logika penambahan barang. Selanjutnya program akan menampilkan pesan "Nama barang baru:" disini pengguna diminta untuk memasukkan nama barang yang ingin ia tambahkan ke dalam daftar wishlist belanja  
+
+
+kemudian program akan melakukan proses validasi, jika pengguna memasukkan angka pada bagian ini maka program akan menampilkan pesan "Nama barang tidak boleh hanya angka saja", ataupun jika pada bagian ini pengguna memasukkan nama barang tetapi hurufnya lebih kecil dari 3 huruf maka program akan menampilkan pesan "Nama barang terlalu pendek, masukkan minimal 3 huruf", tetapi apabila pada bagian ini pengguna memasukkan nama barang dengan benar yaitu bukan berupa angka saja ataupun panjang hurufnya lebih dari 2 huruf maka program akan menjalankan List_barang.append(barang) yang artinya program menambahkan nama barang yang dimasukkan oleh pengguna tadi ke dalam List barang, dan akan menampilkan pesan "(barang yang dimasukkan tadi misalnya buku) berhasil ditambahkan"  
+
+
+__-Menampilkan isi wishlist (pilihan 2)__  
+
+
+ketika pengguna memilih pilihan 2 maka program akan mengecek isi list, jika list masih kosong maka program akan menampilkan pesan "Daftar wishlist masih kosong", tetapi jika list terisi maka program akan melakukan perulangan dan menampilkan isi list dengan nomor urut yang dimulai dari nomor 1  
+
+
+__-Menghapus barang (pilihan 3)__  
+
+
+Ketika pengguna memilih pilihan 3 maka program akan menampilkan daftar barang yang ada terlebih dahulu kemudian meminta pengguna untuk memasukkan nomor barang yang ingin dia hapus sesuai dengan nomor barang yang ada ditampilan daftar barang, jika pengguna memilih pilihan nomor 3 tetapi belum ada barang yang ditambahkan atau list masih dalam keadaan kosong maka program akan menampilkan pesan "Tidak ada barang di wishlist yang bisa dihapus", tetapi jika sebelumnya pengguna sudah memasukkan barang dalam list atau list sudah terisi maka misal pengguna memasukkan nomor 1 pada pilihan nomor barang yang ingin di hapus maka program akan menjalankan List_barang.pop(nomor - 1) yang artinya program menghapus nama barang pada nomor itu dari daftar list barang dan menampilkan pesan "(barang yang ingin dihapus misalnya baju) sudah dibeli dan dihapus dari wishlist", tetapi jika pengguna memasukkan nomor yang tidak ada di daftar maka program akan menampilkan pesan "Nomor tersebut tidak ada di dalam daftar wishlist anda"  
+
+
+__-Keluar dari program (pilihan 4)__  
+
+
+Ketika pengguna memilih pilihan 4 maka program mengubah status pada running menjadi false yang artinya perulangan berhenti dan program telah selesai 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
