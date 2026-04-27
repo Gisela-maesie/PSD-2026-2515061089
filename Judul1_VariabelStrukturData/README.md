@@ -9,7 +9,7 @@ Aplikasi ini menggunakan struktur data list 1 dimensi, pemilihan penggunaan stru
 
 __c. Source Code__  
 
-<img width="1285" height="969" alt="Screenshot 2026-04-25 230249" src="https://github.com/user-attachments/assets/e6caea78-d6dd-4e49-bf18-844bd5a9113d" />
+<img width="1379" height="947" alt="Screenshot 2026-04-27 232929" src="https://github.com/user-attachments/assets/46f5fd96-d284-44b6-a996-228350a77d4d" />
 <img width="1289" height="749" alt="Screenshot 2026-04-25 230726" src="https://github.com/user-attachments/assets/f9dfcde6-a804-4f2f-8446-30c69fa168ba" />  
 
 
@@ -176,11 +176,11 @@ __main()__ : Perintah terakhir untuk mengeksekusi fungsi utama program
 __d. Output Program__  
 
 
-<img width="1096" height="1034" alt="Screenshot 2026-04-26 153653" src="https://github.com/user-attachments/assets/1914ab50-82f7-464c-9508-459baff5c37c" />
-<img width="1094" height="994" alt="Screenshot 2026-04-26 153738" src="https://github.com/user-attachments/assets/a46abe57-afc2-4bd8-85cb-2f31fbeda4a0" />
-<img width="1093" height="996" alt="Screenshot 2026-04-26 153811" src="https://github.com/user-attachments/assets/9580eef5-9b69-4d2f-b2ad-87197255201f" />
-<img width="1099" height="271" alt="Screenshot 2026-04-26 153847" src="https://github.com/user-attachments/assets/fcd54918-562f-41b8-b08e-109fab2ee6e9" />  
-
+<img width="1395" height="1045" alt="Screenshot 2026-04-27 233731" src="https://github.com/user-attachments/assets/38d66deb-6544-45c3-bf79-74bb3314e158" />
+<img width="1386" height="1000" alt="Screenshot 2026-04-27 233816" src="https://github.com/user-attachments/assets/8971a329-f0ee-4fce-af23-5645ad04625d" />
+<img width="1390" height="1005" alt="Screenshot 2026-04-27 233850" src="https://github.com/user-attachments/assets/340c9e17-0af4-4d8c-878d-9b1be0eb39f8" />
+<img width="1396" height="977" alt="Screenshot 2026-04-27 234404" src="https://github.com/user-attachments/assets/e9a5b7bd-49f5-4c47-8996-3e72124d84a4" />
+ 
 
 __-Menampilkan menu utama__  
 
@@ -237,7 +237,7 @@ Ketika pengguna memilih pilihan 4 maka program mengubah status pada running menj
 
 
 # Link Youtube:
-https://youtu.be/6YA3F3_ASTM?si=AF6LOmeehydE3RE_
+https://youtu.be/DKjAn7XVrYQ?si=OPIC1FG9ZbMJ5RnV
 
 
 
