@@ -233,7 +233,11 @@ Ketika pengguna memilih pilihan 3 maka program akan menampilkan daftar barang ya
 __-Keluar dari program (pilihan 4)__  
 
 
-Ketika pengguna memilih pilihan 4 maka program mengubah status pada running menjadi false yang artinya perulangan berhenti dan program telah selesai 
+Ketika pengguna memilih pilihan 4 maka program mengubah status pada running menjadi false yang artinya perulangan berhenti dan program telah selesai  
+
+
+# Link Youtube:
+https://youtu.be/6YA3F3_ASTM?si=AF6LOmeehydE3RE_
 
 
 
