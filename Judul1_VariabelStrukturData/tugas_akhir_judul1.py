@@ -1,5 +1,5 @@
 def menu():
-    print("Wishlist Belanja")
+    print("\nWishlist Belanja")
     print("1. Tambahkan barang baru")
     print("2. Tampilkan isi wishlist belanja")
     print("3. Hapus barang yang sudah dibeli")
@@ -12,7 +12,7 @@ def main():
     while running:
         menu()
         try:
-            choice = int(input("Pilihan: "))
+            choice = int(input("\nPilihan: "))
         except ValueError:
             print("Masukkan angka yang valid!")
             continue
