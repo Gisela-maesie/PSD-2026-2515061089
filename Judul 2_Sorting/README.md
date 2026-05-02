@@ -78,7 +78,25 @@ ____if__name______=="_____main_____": Logika untuk memastikan fungsi utama progr
 __main():__ Perintah terakhir untuk mengeksekusi fungsi utama sehingga program mulai berjalan dari awal hingga akhir  
 
 __d. Output Program__  
-<img width="1427" height="503" alt="Screenshot 2026-05-02 221137" src="https://github.com/user-attachments/assets/28801a14-0e7a-4088-90dd-3ad157513c95" />
+
+<img width="1427" height="503" alt="Screenshot 2026-05-02 221137" src="https://github.com/user-attachments/assets/28801a14-0e7a-4088-90dd-3ad157513c95" />  
+
+__-Menampilkan judul dan input jumlah data__  
+
+Saat pertama kalo program dijalankan, sistem akan menampilkan judul utama yaitu "---SISTEM DIGITALISASI PENGURUTAN DATA BERAT BADAN ANAK DI POSYANDU---", setelah judul itu muncul, program akan menampilkan pesan "Masukkan jumlah anak:" di sini user diminta untuk memasukkan total data jumlah anak yang ingin di proses, jika user memasukkan inputan selain angka misalnya huruf atau simbol, maka program akan menjalankan bagian except ValurError dan akan menampilkan pesan "Input tidak valid!" dan langsung menghentikan program  
+
+
+__-Proses input berat badan anak__  
+
+Setelah user memasukkan jumlah anak yang akan di proses, program ini akan menampilkan pesan "Masukkan data berat badan untuk (n) anak (kg):" yang mana disini user diminta untuk memasukkan ddata berat badan anak dalam satuan kg, kemudian program masuk ke dalam perulangan untuk mengambil data satu per satu sebanyak jumlah anak yg diinputkan oleh user di awal tadi, jika user memasukkan data selain angka misalnya huruf atau simbol maka program akan menjalankan except ValueError dan menampilkan pesan "Masukkan angka berat badan yang valid!", program ini tidak akan lanjut ke data ana berikutnya sebelum pengguna memasukkan inputan yang benar yaitu berupa angka, disini pengguna dapat memasukkan bilangan desimal juga karena disini menggunakan tipe data float. Jika input sudah valid, maka program akan menjalakan berat_badan.append(nilai) yang artinya data yang dimasukkan oleh user yang tadinya disimpan dalam variabel nilai akan ditambahkan ke dalam daftar di variabel berat_badan  
+
+__-Menampilkan data awal dan proses pengurutan__  
+
+Setelah semua data terkumpul, program akan menampilkan daftar awal yang telah dimasukkan oleh user tadi dengan menampilkan pesan "Data berat badan awal:" diikuti dengan isi list yang ada di dalam variabel berat_badan. kemudian, program secara otomatis akan memanggil fungsi buble_sort(berat_badan, n) yang berfungsi untuk merapikan data yang ada di dalam variabel berat_badan, di dalam fungsi ini program melakukan perulangan untuk membandingkan posisi angka, jika angka di posisi kiri lebih besar daripada angka di sebelah kanannya maka program akan memanggil fungsi tukar(arr, i, j) yang menggunakan variabel temp untuk memindahkan posisi angka yang lebih kecil kedepan dan yang lebih besar ke belakang  
+
+__-Menampilkan hasil akhir pengurutan__  
+
+Setelah seluruh proses selesai, program akan menampilkan pesan Ürutan berat badan setelah diurutkan dari paling ringan ke paling berat:" , kemudian program akan melakukan perulangan terakhir untuk menamapilkan isi list yang sudah rapi dan menampilkannya ke layar. Kasilnya setiap data akan muncul secara berurutan dari angka terkecil hingga terbesar dan diikuti dengan satua kg di belakangnya sehingga data menjadi sangat mudah dibaca oleh petugas posyandu
 
 
 
