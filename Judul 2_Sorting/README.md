@@ -8,7 +8,9 @@ Untuk bagian pengurutan, program ini menggunakan cara kerja buble sort. Algoritm
 
 __c. Code Program__  
 <img width="1276" height="946" alt="Screenshot 2026-05-02 115441" src="https://github.com/user-attachments/assets/06b2b38a-f5e4-456d-925d-7b1d8363c3c3" />
-<img width="1286" height="214" alt="Screenshot 2026-05-02 114745" src="https://github.com/user-attachments/assets/df8b198a-d8f6-4adc-9119-ad400c5ee3af" />
+<img width="1286" height="214" alt="Screenshot 2026-05-02 114745" src="https://github.com/user-attachments/assets/df8b198a-d8f6-4adc-9119-ad400c5ee3af" />  
+
+__def tuar(arr, i, j):__ Mendefinisikan 
 
 
 
