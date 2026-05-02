@@ -42,7 +42,7 @@ __print("\nUrutan berat badan setelah diurutkan dari yang paling ringan e paling
 __for i in range(n):__ Melakukan perulangan untuk mengambil setiap data berat badan yang sekarang sudah tersusun rapi di dalam list  
 __print("f{berat_badan[i] kg", end=" "):__ Menggunakan f-string untuk memanggil isi data yang tersimpan di variabel berat_badan disertai satuan kg serta menggunakan end=" " agar data nya tertulis ke samping  
 __print():__ Membuat baris kosong baru  
-__if_name_=="_main_":__ Logika untuk memastikan fungsi utama program hanya berjalan jika file kode ini dieksekusi secara langsung  
+____if__name______=="_____main_____": Logika untuk memastikan fungsi utama program hanya berjalan jika file kode ini dieksekusi secara langsung  
 __main():__ Perintah terakhir untuk mengeksekusi fungsi utama sehingga program mulai berjalan dari awal hingga akhir
 
 
