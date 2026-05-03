@@ -96,7 +96,9 @@ Setelah semua data terkumpul, program akan menampilkan data awal yang telah dima
 
 __-Menampilkan hasil akhir pengurutan__  
 
-Setelah seluruh proses selesai, program akan menampilkan pesan "Urutan berat badan setelah diurutkan dari paling ringan ke paling berat:" , kemudian program akan melakukan perulangan terakhir untuk menamapilkan isi list yang sudah rapi dan menampilkannya ke layar. Hasilnya setiap data akan muncul secara berurutan dari angka terkecil hingga terbesar dan diikuti dengan satua kg di belakangnya sehingga data menjadi sangat mudah dibaca oleh petugas posyandu
+Setelah seluruh proses selesai, program akan menampilkan pesan "Urutan berat badan setelah diurutkan dari paling ringan ke paling berat:" , kemudian program akan melakukan perulangan terakhir untuk menamapilkan isi list yang sudah rapi dan menampilkannya ke layar. Hasilnya setiap data akan muncul secara berurutan dari angka terkecil hingga terbesar dan diikuti dengan satua kg di belakangnya sehingga data menjadi sangat mudah dibaca oleh petugas posyandu  
+
+# Link Youtube
 
 
 
