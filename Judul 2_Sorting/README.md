@@ -12,7 +12,7 @@ __c. Code Program__
 
 __def tukar(arr, i, j):__ Mendefinisikan fungsi bernama tukar untuk memindahkan dua elemen di dalam list berdasarkan indeksnya  
 
-__temp = aff[i]:__ Membuat variabel sementara bernama temp untuk menyimpan nilai data pada posisi i agar tidak hilang saat ditimpa  
+__temp = arr[i]:__ Membuat variabel sementara bernama temp untuk menyimpan nilai data pada posisi i agar tidak hilang saat ditimpa  
 
 __arr[i] = arr[j]:__ Menimpa nilai pada posisi i dengan nilai yang diambil dari posisi j  
 
@@ -22,7 +22,7 @@ __def buble_sort(arr, n):__ Mendefinisikan fungsi bernama buble_sort untuk melak
 
 __for i in range(n - 1):__ Melakukan perulangan luar untuk menentukan berapa banyak putaran pengecekan yang harus dilakukan pada list  
 
-__for j in range(n - 1 - 1):__ Melakukan perulangan dalam untuk membandingkan setiap dua data yang letaknya besebelahan secara bertahap  
+__for j in range(n - 1 - 1):__ Melakukan perulangan dalam untuk membandingkan setiap dua data yang letaknya bersebelahan secara bertahap  
 
 __if arr[j] > arr[j+  1]:__ Logika percabangan untuk mengecek apakah data di sebelah kiri nilainya lebih besar daripada data di sebelah kanannya  
 
@@ -35,7 +35,7 @@ __print("\n---SISTEM DIGITALISASI PENGURUTAN DATA BERAT BADAN ANAK DI POSYANDU--
 
 __try:__ Memulai blok intruksi untuk menjalankan program  
 
-__n = int(input("Masukkan jumlah anak : ")):__ Meminta pengguna untuk memasukkan jumlah anak dalambentuk integer(bilangan bulat) dan menyimpannya di variabel n  
+__n = int(input("Masukkan jumlah anak : ")):__ Meminta pengguna untuk memasukkan jumlah anak dalam bentuk integer(bilangan bulat) dan menyimpannya di variabel n  
 
 __except ValueError:__ Menangkap kesalahan jika pengguna memasukkan inputan selain integer(bilangan bulat)  
 
@@ -51,13 +51,13 @@ __while True:__ Memulai perulangan while yang akan terus berjalan sampai penggun
 
 __try:__ Memulai blok intruksi untuk mengeksekusi inputan angka berat badan dari user  
 
-__nilai = float(input(f"Anak ke-(i+1):"):__ Meminta user untuk memasukkanangka berat badan anak bisa berupa bilangan desimal dan menyimpannya ke dalam variabel nilai  
+__nilai = float(input(f"Anak ke-(i+1):"):__ Meminta user untuk memasukkan angka berat badan anak bisa berupa bilangan desimal dan menyimpannya ke dalam variabel nilai  
 
-__berat_badan.append(nilai):__ Menambahkan data angka dari variabel nilai ke dalam list variabel berat_badan  
+__berat_badan.append(nilai):__ Menambahkan data angka berat badan dari variabel nilai ke dalam list variabel berat_badan  
 
 __break:__ Menghentikan perulangan while dan lanjut ke anak berikutnya karena data sudah berhasil ditambahkan  
 
-__except ValueError:__ Menangkap kesalahan jika pengguna atau user memasukkan inputan bukan berupa angka  
+__except ValueError:__ Menangkap kesalahan jika pengguna atau user memasukkan inputan selain angka  
 
 __print("Masukkan angka berat badan yang valid!"):__ Menampilkan pesan "Masukkan angka berat badan yang valid!" ke layar jika user memasukkan inputan selain angka  
 
@@ -69,7 +69,7 @@ __print("\nUrutan berat badan setelah diurutkan dari yang paling ringan e paling
 
 __for i in range(n):__ Melakukan perulangan untuk mengambil setiap data berat badan yang sekarang sudah tersusun rapi di dalam list  
 
-__print("f{berat_badan[i] kg", end=" "):__ Menggunakan f-string untuk memanggil isi data yang tersimpan di variabel berat_badan disertai satuan kg serta menggunakan end=" " agar data nya tertulis ke samping  
+__print("f{berat_badan[i] kg", end=" "):__ Menggunakan f-string untuk memanggil isi data yang tersimpan di variabel berat_badan disertai satuan kg serta menggunakan end=" " agar data nya tertulis secara menyamping  
 
 __print():__ Membuat baris kosong baru  
 
