@@ -2,7 +2,7 @@ __a. Judul Program__
 Sistem Digitalisasi Pengurutan Data Berat Badan Anak di Posyandu  
 
 __b. Deskripsi Singkat__  
-Program ini dibuat untuk membantu petugas posyandu dalam merapikan data berat badan anak secara digital. Fungsi utamanya adalah menyusun daftar berat badan anak dari yang paling ringan hingga yang paling berat secara otomatis. Deangan program ini, petugas tidak perlu lagi mengurutkan datasatu per stau secara manual, sehingga resiko salah catat dapat dikurangi dan pemantauan gizi anak jadi lebih praktis  
+Program ini dibuat untuk membantu petugas posyandu dalam merapikan data berat badan anak secara digital. Fungsi utamanya adalah menyusun daftar berat badan anak dari yang paling ringan hingga yang paling berat secara otomatis. Deangan program ini, petugas tidak perlu lagi mengurutkan data satu per satu secara manual, sehingga resiko salah catat dapat dikurangi dan pemantauan gizi anak jadi lebih praktis  
 
 Untuk bagian pengurutan, program ini menggunakan cara kerja buble sort. Algoritma ini bekerja dengan cara membandingkan dua data yang bersebelahan, lalu menukarnya jika posisinya belum urut. Proses ini diulang terus-menerus sampai semua data benar-benar tersusun rapi. Cara ini dipilih karena langkah-langkahnya pasti dan teliti dalam memastikan setiap data berat badan anak berada dalam urutan yang tepat, sehingga hasil akhirnya akurat dan mudah dibaca oleh petugas. Program ini sangat cocok digunakan untuk pendataan rutin bulanan agar pertugas dapat langsung mengetahui siapa saja anak dengan berat badan terendah sampai tertinggi di wilayah tersebut.  
 
@@ -98,7 +98,8 @@ __-Menampilkan hasil akhir pengurutan__
 
 Setelah seluruh proses selesai, program akan menampilkan pesan "Urutan berat badan setelah diurutkan dari paling ringan ke paling berat:" , kemudian program akan melakukan perulangan terakhir untuk menamapilkan isi list yang sudah rapi dan menampilkannya ke layar. Hasilnya setiap data akan muncul secara berurutan dari angka terkecil hingga terbesar dan diikuti dengan satua kg di belakangnya sehingga data menjadi sangat mudah dibaca oleh petugas posyandu  
 
-# Link Youtube
+# Link Youtube  
+https://youtu.be/HFcP6PVfGe4?si=42Qv8jwYSQZmf2J9
 
 
 
