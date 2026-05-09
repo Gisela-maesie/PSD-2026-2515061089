@@ -7,5 +7,7 @@ Program ini dirancang sebagai aplikasi sederhana namun efektif untuk membantu pe
 Aplikasi ini menggunakan algoritma Sequential Search. Pemilihan metode ini didasarkan pada karakteristiknya yang sangat fleksibel dalam menangani data yang tidak terurut (acak), seperti daftar nilai yang masuk secara acak. Karena menggunakan pencarian berurutan dari awal hingga akhir data, program ini mampu memindai seluruh isi daftar nilai untuk memastikan setiap skor yang sama dapat terhitung dengan akurat.  
 
 __c. Source Code__  
+<img width="698" height="464" alt="Screenshot 2026-05-09 231019" src="https://github.com/user-attachments/assets/b749bf76-c404-4099-8753-31cbbd161800" />
 
-<img width="635" height="470" alt="Screenshot 2026-05-09 230713" src="https://github.com/user-attachments/assets/db3aa387-edde-4153-b196-b66870171341" />
+
+
