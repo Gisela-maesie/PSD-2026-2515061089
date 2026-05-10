@@ -37,3 +37,7 @@ __c. Source Code__
 - __if __name__=="__main__":__ Digunakan untuk memastikan bahwa fungsi main() hanya akan berjalan jika file ini dieksekusi secara langsung
 - __main():__ Perintah untuk mengeksekusi atau menjalankan seluruh rangkaian yang ada di fungsi main() atau fungsi utama
 
+__d. Outrput Program__  
+<img width="641" height="200" alt="Screenshot 2026-05-10 115659" src="https://github.com/user-attachments/assets/60e2fbbe-9381-4303-8419-3592cde50229" />
+
+
