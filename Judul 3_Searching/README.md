@@ -38,6 +38,26 @@ __c. Source Code__
 - __main():__ Perintah untuk mengeksekusi atau menjalankan seluruh rangkaian yang ada di fungsi main() atau fungsi utama
 
 __d. Outrput Program__  
-<img width="641" height="200" alt="Screenshot 2026-05-10 115659" src="https://github.com/user-attachments/assets/60e2fbbe-9381-4303-8419-3592cde50229" />
+<img width="641" height="200" alt="Screenshot 2026-05-10 115659" src="https://github.com/user-attachments/assets/60e2fbbe-9381-4303-8419-3592cde50229" />  
+
+- __Menampilkan Judul dan Data Awal__
+
+  Saat program pertama kali di jalankan, sistem akan langsung menampilkan pesan "_____SISTEM ANALISIS NILAI TRY OUT___" sebagai judul dari sistem ini. setelah itu, program akan menampilkan seluruh isi daftar nilai yang tersimpan dalam variabel nilai_siswa melalui pesan "Daftar nilai try out: [60, 55, 100, 70, 75, 70, 80, 90, 65, 80, 95, 60, 45, 50, 40, 100, 100, 50, 65, 90]". Hal ini bertujuan agar pengguna dapat melihat terlebih dahulu kumpulan nilai yang tersedia dalam daftar data nilai sebelum melakukan pencarian
+
+- __Proses Input Nilai dan Validasi Kesalahan__
+  
+  Setelah menampilkan data berupa daftar nilai siswa, selanjutnya program ini akan menampilkan pesan "Masukkan nilai try out yang ingin dicari (0-100)" disini pengguna diminta untuk memasukkan angka nilai yang ingin dianalisis frekuensinya berupa angka bilangan bulat dari 0 sampai 100. Jika pada saat penginputan nilai yang ingin dicari tenyata pengguna memasukkan inputan selain angka bilangan bulat misalnya seperti di contoh output tersebut yaitu pengguna memasukkan inputan berupa string atau huruf, maka program akan menjalankan bagian except VaueError dan menampilkan pesan "Input tidak valid, silahkan masukkan angka!". Setelah pesan peringatan muncul, program akan otomatis meminta pengguna untuk memasukkan ulang inputan nilai yang ingin dicari sampai pengguna memasukkan inputannya dalam format peulisan yang benar yaitu angka dalam bentuk bilangan bulat
+
+- __Proses Pencarian dan Menampilkan Hasil (Pencarian Berhasil)__
+  
+  Apabila pengguna memasukkan inputan angka yang dicari sudah benar yaitu berupa angka bilangan bulat seperti di contoh, maka program akan menjalankan fungsi sequential_search. Program ini akan menelusuri seluruh isi daftar nilai siswa dari awal hingga akhir untuk menghitung berapa kali angka dari nilai yang dicari oleh pengguna tersebut muncul. Setelah proses pencarian selesai dan data ditemukan, program akan menampilkan hasil utama yaitu "Hasil: Nilai (nilai yang dicari, misal di contoh adalah 90) ditemukan pada (banyaknya kemunculan nilai tersebut di dalam daftar nilai siswa yang tadi telah ditelusuri, misal dicontoh adalah ditemukan kemuncuannya sebanyak 2) siswa". Selanjutnya program memberikan keterangan tambahan yang lebih detail untuk memperjelas hasil analisis tersebut dengan pesan "Keterangan: Ada (banyaknya kemunculan nilai yang dicari, misal di contoh adalah 2) orang siswa yang mendapatkan nilai (nilai yang dicari, misal di contoh adalah 90) dalam try out ini
+
+- __Kondisi Jika Data Tidak Ditemukan__
+  
+  Meskipun tidak terlihat pada contoh gambar output yang ada, namun jika pengguna memasukkan inputan angka yang dicari berupa bilangan bulat namun angka tersebut tidak ada di dalam daftar nilai siswa yang tersedia misalnya 10, di dalam daftar nilai siswa yang tersedia angka 10 tidak ada disana, maka program akan menjalankan logika else dan menampilkan pesan "Hasil: Tidak ada siswa yang mendapatkan nilai (nilai yang dicari misal 10)" sebagai informasi bahwa nilai tersebut tidak ada di dalam daftar nilai siswa yang tersedia
+
+## Link YouTube:
+
+
 
 
