@@ -57,7 +57,12 @@ __d. Outrput Program__
   Meskipun tidak terlihat pada contoh gambar output yang ada, namun jika pengguna memasukkan inputan angka yang dicari berupa bilangan bulat namun angka tersebut tidak ada di dalam daftar nilai siswa yang tersedia misalnya 10, di dalam daftar nilai siswa yang tersedia angka 10 tidak ada disana, maka program akan menjalankan logika else dan menampilkan pesan "Hasil: Tidak ada siswa yang mendapatkan nilai (nilai yang dicari misal 10)" sebagai informasi bahwa nilai tersebut tidak ada di dalam daftar nilai siswa yang tersedia
 
 ## Link YouTube:  
-https://youtu.be/KqIlRPkF6uw?si=KagtGgQliyqjn0h6
+https://youtu.be/KqIlRPkF6uw?si=KagtGgQliyqjn0h6  
+
+
+### Tugas Binary Searching Interpolation mencari nilai 95  
+<img width="1280" height="960" alt="WhatsApp Image 2026-05-11 at 21 27 15" src="https://github.com/user-attachments/assets/b145dd5e-166b-4fb9-a11f-4a68284fcd07" />
+
 
 
 
