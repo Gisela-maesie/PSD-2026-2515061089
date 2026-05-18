@@ -1,11 +1,14 @@
 __a. Judul Program__  
+Sistem Manajemen Tumpukan Kursi Berbasis Struktur Data Stack Array
 
 __b. Deskripsi Program__  
+Porgram ini dirancang sebagai sistem sederhana namun efektif untuk membantu pengelola fasilitas atau kru lapangan dalam memantau inventaris tumpukan kursi di suatu tempat, misalnya seperti aula, gedung acara, atau tenda. Fungsi utama dari program ini adalah memberikan kemudahan bagi pengguna untuk mengelola proses keluar masuknya kursi secara teratur di suatu tempat. Dengan menggunakan sistem ini, proses penataan akan menjadi lebih terorganisir, sehingga pengguna dapat melihat urutan tumpukan kursi secara cepat tanpa harus mengeceknya secara manual satu persatu
 
 __c. Source Code__  
 <img width="635" height="476" alt="Screenshot 2026-05-18 212454" src="https://github.com/user-attachments/assets/6f41fc13-43dd-4c78-bb97-455c59a092e0" />
 <img width="636" height="463" alt="Screenshot 2026-05-18 212541" src="https://github.com/user-attachments/assets/af0f6dbd-2f3b-4419-be5b-3ee5a09ad1ac" />
 <img width="635" height="209" alt="Screenshot 2026-05-18 212609" src="https://github.com/user-attachments/assets/e6878ba4-5334-42b6-a68b-24905835a135" />  
+
 
 __d. Output Program__  
 
