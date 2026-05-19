@@ -12,11 +12,11 @@ __c. Source Code__
 <img width="635" height="209" alt="Screenshot 2026-05-18 212609" src="https://github.com/user-attachments/assets/e6878ba4-5334-42b6-a68b-24905835a135" />  
 
 - __Class StackKursi:__ Mendefinisikan sebuah kelas baru bernama StackKursi yang berfungsi sebagai struktur utama untuk membuat objek tumpukan kursi  
-- __def __init__(self, max_size=5):__ Mnedefinisikan fungsi init dengan parameter max_size yang diberi nilai bawaan yaitu 5, digunakan utuk meginisialisasi properti awal saat objek tumpukan dibuat  
+- __def __init__(self, max_size=5):__ Mendefinisikan fungsi init dengan parameter max_size yang diberi nilai bawaan yaitu 5, digunakan utuk meginisialisasi properti awal saat objek tumpukan dibuat  
 - __self.MAX = max_size:__ Membuat variabel MAX untuk menyimpan batas maksimal kapasitas kursi yang bisa ditumpuk di dalam sistem yaitu 5 kursi  
-- __self.st = [None] * self.MAX:__ Membuat sebuah list/array bernama st sepanjangn nilai MAX yang seluruh tempatnya diisi dengan none (kosong) sebagai wadah fisik penyimpanan data kursi  
+- __self.st = [None] * self.MAX:__ Membuat sebuah list/array bernama st sepanjang nilai MAX yang seluruh tempatnya diisi dengan none (kosong) sebagai wadah fisik penyimpanan data kursi  
 - __self.top_idx = -1:__ Menginisialisasi variabel pointer top.idx dengan nilai awal -1 sebagai penanda bahwa tumpukan saat ini masih kosong dan belum ada indeks kursi yang ditunjuk  
-- __def is_empty(self):__ Mendefinisikan fungsi is_empty untuk mengecek status tumpukan, fungsi ini akan mengembalikan nilai True jika tumpukan kosonh dan False jika ada isinya  
+- __def is_empty(self):__ Mendefinisikan fungsi is_empty untuk mengecek status tumpukan, fungsi ini akan mengembalikan nilai True jika tumpukan kosong dan False jika ada isinya  
 - __return self.top_idx == -1__ Mengembalikan hasil perbandingan logika apakah top_idx bernilai -1 jika iya berarti tumpukan terbukti kosong  
 - __def is_full(self):__ Mendefinisikan fungsi is_full untuk mengecek apakah kapasitas tumpukan kursi sudah mencapai batas maksimal yang ditentukan  
 - __return self.top_idx == self.MAX - 1:__ Mengembalikan hasil perbandingan apakah nilai top_idx sudah sama dengan MAX -1 (indeks terakhir array) jika iya, maka tumpukan terbukti sudah penuh  
@@ -25,17 +25,17 @@ __c. Source Code__
 - __print("Tumpukan kursi sudah terlalu tinggi! tidak bisa menerima kursi baru lagi"):__ Menampilkan pesan tersebut ke layar jika fungsi is_full bernilai True, yang menandakan bahwa kursi baru tidak bisa dimasukkan atau ditambahkan kedalam tumpukan kursi karena tumpukan sudah mencapai batas maksimalnya  
 - __return:__ Perintah untuk keluar dari fungsi push agar baris kode dibawahnya tidak dieksekusi jika kondisi tumpukan sudah penuh  
 - __self top_idx += 1:__ Menambahkan nilai variabel top_idx sebanyak 1 angka untuk menggeser posisi penunjuk tumpukan ke indeks kosong berikutnya  
-- __self.st[self.top_idx] = warna_kursi:__ Memasukkan data warna_kursi yang dsimasukkan pengguna ke dalam array st pada pososo indeks yang ditunjuk oleh top_idx saat ini  
+- __self.st[self.top_idx] = warna_kursi:__ Memasukkan data warna_kursi yang dimasukkan pengguna ke dalam array st pada posisi indeks yang ditunjuk oleh top_idx saat ini  
 - __print(f"Kursi warna {warna_kursi} berhasil ditambahkan ke tumpukan"):__ Menampilkan pesan tersebut ke layar, menggunakan f-string agar teks warna_kursi terbaca sebagai variabel yang memiliki data atau isi bukan sebagai teks biasa  
 - __def pop(self):__ Mendefinisikan fungsi pop untuk mengambil atau menghapus data kursi yang berada di posisi paling atas tumpukan (sesuai prinsip LIFO)  
 - __if self.is_empty():__ Logika percabangan untuk memeriksa apakah tumpukan kursi sata ini sedang dalam keadaan kosong dengan memanggil fungsi is_empty()  
-- __print("Tumpukan kosong! tidak ada kursi yang bisa diambil"):__ Menampilkan pesan tersebut ke layar jika fungsi is_empty bernilai True, pesan ini berfungsiuntuk memberikan kabar bahwa tidak ada kursi yang bisa diambil karena tumpukan kursi dalam keadaan kosong  
+- __print("Tumpukan kosong! tidak ada kursi yang bisa diambil"):__ Menampilkan pesan tersebut ke layar jika fungsi is_empty bernilai True, pesan ini berfungsi untuk memberikan kabar bahwa tidak ada kursi yang bisa diambil karena tumpukan kursi dalam keadaan kosong  
 - __return:__ Perintah untuk keluar dari fungsi pop agar program tidak memproses penghapusan data pada tumpukan yang kosong  
 - __kursi_diambil = self.st[self.top_idx]:__ Mengambil data warna kursi dari array st pada posisi top_idx saat ini dan menyimpannya ke dalam variabel kursi_diambil  
-- __self.top_idx -= 1:__ Mengurangi nilai variabel top_idx sebanyak 1 angka agar penunjuk tumpukan turun ke kursi dibawahnya, secara otomatis akan menghapus akses ke kursi yang sebelumnya berada diatasnya  
+- __self.top_idx -= 1:__ Mengurangi nilai variabel top_idx sebanyak 1 angka agar penunjuk tumpukan turun ke kursi dibawahnya, dan secara otomatis akan menghapus akses ke kursi yang sebelumnya berada diatasnya  
 - __print(f"Kursi warna {kursi_diambil} diambil dari tumpukan:__ Menampilkan pesan tersebut ke layar menggunakan f-string agar tulisan kursi_diambil tidak dibaca sebagai teks biasa tetapi dibaca sebagai variabel yang memiliki isi atau data di dalamnya  
 - __def peek(self):__ Mendefinisikan fungsi peek untuk melihat data kursi yang berada diposisi paling atas tanpa mengubah atau menghapus posisi tumpukan  
-- __if self.is_empty():__ Logika percabangan untuk memastikan tumpukan tidak sedang dalamkeadaan kosong sebelum melakukan proses peek  
+- __if self.is_empty():__ Logika percabangan untuk memastikan tumpukan tidak sedang dalam keadaan kosong sebelum melakukan proses peek  
 - __print("Tidak ada kursi di tumpukan"):__ Menampilkan pesan "Tidak ada kursi di tumpukan " ke layar  
 - __return:__ Perintah untuk keluar dari fungsi peek jika kondisi tumpukan terbukti kosong  
 - __print(f"Kursi yang ada di posisi paling atas adalah kursi berwarna {self.st[self.top_idx]}"):__ Menampilkan data warna kursi yang berada di posisi paling atas tumpukan (indeks top_idx) ke layar menggunakan f-string agar teks self.st[self.top_idx] tidak dibaca sebagai teks biasa  
@@ -46,7 +46,7 @@ __c. Source Code__
 - __print("\nKondisi tumpukan kursi (Atas ke Bawah): ", end="")__ Menampilkan pesan tersebut ke layar  
 - __for i in range(self.top_idx, -1, -1):__ Memulai perulangan for dengan fungsi range yang bergerak mundur dimulai dari indeks tertinggi (top_idx) menuju indeks o dengan langkah penurunan -1  
 - __print(self.st[i], end=""):__ Mengambil data warna kursi dari array st pada posisi indeks i yang sedang diulang, lalu menampilkan ke layar dengan tambahan end="" agar antar warna kursi dipisahkan oleh satu spasi dan posisinya berjejer kesamping dibaris yang sama  
-- __print():__ Perintah untuk mencetak baris kosong diluar perulangan for yangberfungsi memberikan perintah ganti baris satu kali setelah semua warna kursi selesai ditampilkan agar tampilan lebih rapi  
+- __print():__ Perintah untuk mencetak baris kosong diluar perulangan for yang berfungsi memberikan perintah ganti baris satu kali setelah semua warna kursi selesai ditampilkan agar tampilan lebih rapi  
 - __def main():__ Mendefinisikan fungsi utama bernama main() sebagai pusat jalannya seluruh alur program  
 - __gudang_kursi = StackKursi(max_size=5):__ Membuat variabel baru bernama gudang_kursi dengan memanggil fungsi class StackKursi dan memeberikan batasan kapasitas maksimal yaitu sebanyak 5 kursi  
 - __pilih = 0:__ Menginisialisasi variabel pilih dengan nilai awal 0 yang nantinya akan digunakan untuk menampung nomor menu pilihan dari pengguna  
@@ -58,8 +58,8 @@ __c. Source Code__
 - __print("4. Lihat semua tumpukan kursi"):__ Menampilkan pesan nomor 4 yaitu untuk menampilkan semua daftar tumpukan kursi atau fungsi display  
 - __print("5. Keluar"):__ Menampilkan pesan nomor 5 yaitu untuk keluar dari program  
 - __try:__ Mmemulai blok untuk mengecek inputan dari pengguna  
-- __pilih = int(input("Pilih menu (1-5): ")):__ Meminta pengguna untuk memasukkan nomor menu pilihan dalam bentuk integer (bilangan bulat) dan menyimpannya kedalam variabe pilih  
-- __Except ValueError:__ Untuk emangkap kesalahan yang terjadi ketika pengguna memasukkan pilihan nomor menu tidak berupa bilangan bulat  
+- __pilih = int(input("Pilih menu (1-5): ")):__ Meminta pengguna untuk memasukkan nomor menu pilihan dalam bentuk integer (bilangan bulat) dan menyimpannya kedalam variabel pilih  
+- __Except ValueError:__ Untuk menangkap kesalahan yang terjadi ketika pengguna memasukkan pilihan nomor menu tidak berupa bilangan bulat  
 - __print("Input salah! Masukkan angka."):__ Menampilkan pesan Ïnpust salah! mAaukkan angka" ke layar  
 - __continue:__ Perintah untuk melompati baris sisa dibawahnya dan langsung mengulang embali perulangan ke baris menu utama  
 - __if pilih == 1:__ Logika percabangan jika variabel pilih atau nilai yang dimasukkan oleh pengguna adalah 1, menandakan bahwa pengguna ingin menambahkan kursi baru kedalam tumpukan  
@@ -71,9 +71,9 @@ __c. Source Code__
 - __elif pilih == 2:__ Kondisi alternatif jika pengguna memasukkan pilihan nomor 2 disaat memilih menu utama program  
 - __gudang_kursi.pop():__ Memanggil fungsi pop dari variabel gudang_kursi untuk mengeksekusi pengambilan kursti dari sebuah tumpukan  
 - __elif pilih == 3:__ Kondisi alternatif jika pengguna memasukkan pilihan nomor 3 di pilihan menu utama program  
-- __gudang_kursi.peek():__ Mmemanggil fungsi peek dari variabel gudang_kursi untuk menampilkan informasi warna kursi yang berada ditumpukan teratas  
+- __gudang_kursi.peek():__ Memanggil fungsi peek dari variabel gudang_kursi untuk menampilkan informasi warna kursi yang berada ditumpukan teratas  
 - __elif pilih == 4:__ ondisi alternatif jika pengguna memasukkan pilihan nomr 3 di pilihan menu utama program  
-- __gudang_kursi.display():__ Mmemanggil fungsi display dari variabel gudang_kursi untuk menampilkan seluruh daftar tumpukan kursi yang ada  
+- __gudang_kursi.display():__ Memanggil fungsi display dari variabel gudang_kursi untuk menampilkan seluruh daftar tumpukan kursi yang ada  
 - __elif pilih == 5:__ Kondisi alternatif jika pengguna memasukkan pilihan nomor 5 di pilihan menu utama program  
 - __print("Program selesai"):__ Menampilkan pesan tersebut kelayar sebagai tanda jika program telah selesai dan keluar dari program  
 - __else:__ Kondisi terakhir yang akan berjalan jika pengguna memasukkan pilihan nomor di menu utama berupa bilangan bulat tetapi diluar batas pilihan menu yang tersedia  
@@ -119,4 +119,7 @@ __Proses Menampilkan Seluruh Struktur Tumpukan (Menu 4)__
 Apabila pengguna memilih pilihan pada menu 4, maka program akan memanggil atau menjalankan fungsi display() untuk menampilkan seluruh data kursi yang ada didalam tumpukan. Jika data tersedia, sistem akan menampilkan pesan "\nKondisi tumpukan kursi (Atas ke Bawah): " ke layar. Setelah itu, program mengaktifkan mekanisme perulangan mundur (looping range) dari indeks tertinggi ke terendah, lalu mencetak semua warna kursi secara berjejer menyamping yang dipisahkan oleh karakter spasi tunggal, misalnya "hitam hijau biru coklat merah". Hal ini mempermudah pengguna untuk melihat urutan tumpukan secara cepat. Jika kondisi tumpukan ternyata masih kosong saat menu ini dipilih, maka program akan mendeteksinya melalui fungsi is_empty() dan langsung memunculkan pesan "Tumpukan kursi kosong.".  
 
 __Kondisi Keluar dari Program (Menu 5)__  
-Jika pengguna memilih pilihan 5 pada pilihan daftar menu, maka program akan menampilkan pesan "Program selesai." ke layar dan otomatis akan keluar dari program atau program akan otomatis akan berhenti, yang menandakan bahwa perulangan while telah dihentikan dan seluruh rangkaian operasional pada program ini ditutup dengan aman.
+Jika pengguna memilih pilihan 5 pada pilihan daftar menu, maka program akan menampilkan pesan "Program selesai." ke layar dan otomatis akan keluar dari program atau program akan otomatis akan berhenti, yang menandakan bahwa perulangan while telah dihentikan dan seluruh rangkaian operasional pada program ini ditutup dengan aman.  
+
+## Link Youtube:  
+https://youtu.be/CgY-DtIlxlc
