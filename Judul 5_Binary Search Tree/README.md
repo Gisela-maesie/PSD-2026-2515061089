@@ -12,7 +12,8 @@ __c. Source Code__
 <img width="1433" height="919" alt="Screenshot 2026-05-25 071819" src="https://github.com/user-attachments/assets/d27b321f-b488-4e09-9102-da3110207887" />  
 <img width="1460" height="911" alt="Screenshot 2026-05-25 071905" src="https://github.com/user-attachments/assets/69495e00-86d2-4e95-a152-a73117fca71e" />  
 <img width="1444" height="918" alt="Screenshot 2026-05-25 071940" src="https://github.com/user-attachments/assets/a5b93482-e49f-4824-ba39-db047bf51d4f" />  
-<img width="1442" height="245" alt="Screenshot 2026-05-25 072006" src="https://github.com/user-attachments/assets/249877eb-acb3-4a9f-b852-885807f41658" />  
+<img width="1457" height="299" alt="Screenshot 2026-05-25 085947" src="https://github.com/user-attachments/assets/bf7bf480-2c0f-4b89-a43c-3a0c60e809b5" />
+  
 
 - __class Node:__ Mendefinisikan sebuah kelas baru bernama Node yang berfungsi sebagai struktur dasar untuk membuat setiap simpul (node) di dalam pohon data.  
 - __def init(self, key):__ Mendefinisikan fungsi init dengan parameter key untuk menginisialisasi atribut awal saat objek node baru dibuat.  
@@ -160,6 +161,19 @@ __c. Source Code__
 - __print("Program selesai."):__ Menampilkan pesan program selesai.  
 - __if name == "main":__ Memastikan fungsi main() hanya dijalankan jika file dieksekusi secara langsung.  
 - __main():__ Perintah untuk menjalankan fungsi main().
+
+__d. Output Program__  
+<img width="1462" height="1006" alt="Screenshot 2026-05-25 090256" src="https://github.com/user-attachments/assets/bff01e34-014e-4a6a-9d13-7470b5205abf" />  
+<img width="1494" height="992" alt="Screenshot 2026-05-25 090322" src="https://github.com/user-attachments/assets/99a85448-26ce-460c-b0d6-3a0437ba6487" />  
+<img width="1502" height="974" alt="Screenshot 2026-05-25 090410" src="https://github.com/user-attachments/assets/7f9fa733-f02a-4599-a752-077e032291f7" />  
+<img width="1499" height="621" alt="Screenshot 2026-05-25 090428" src="https://github.com/user-attachments/assets/7bd8b034-2dc5-4e6b-a49e-61f54606d7b5" />  
+
+
+
+
+
+
+
 
 
 
