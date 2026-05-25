@@ -187,7 +187,11 @@ __Proses Cari Successor dan Predecessor (Menu 5 dan 6)__
 Jika pengguna memilih menu 5, program akan meminta input target skor dan menjalankan fungsi find_successor(). Program akan menampilkan Skor berikutnya: [nilai] jika ditemukan, atau Tidak ditemukan jika tidak ada skor yang lebih besar dari target. Begitu pula jika memilih menu 6, program akan menjalankan find_predecessor() dan menampilkan Skor sebelumnya: [nilai] jika ada skor yang lebih kecil dari target, atau Tidak ditemukan jika tidak ada. Keduanya membantu pengguna memahami posisi skor relatif terhadap nilai lain dalam leaderboard.  
 
 __Proses Keluar Dari Program (Menu 7)__  
-Jika pengguna memilih pilihan 7 pada daftar menu, maka program akan menampilkan pesan Program selesai. ke layar. Setelah pesan ini muncul, program akan otomatis berhenti karena perulangan while telah dihentikan, yang menandakan seluruh rangkaian operasional pada program leaderboard ini telah ditutup dengan aman.
+Jika pengguna memilih pilihan 7 pada daftar menu, maka program akan menampilkan pesan Program selesai. ke layar. Setelah pesan ini muncul, program akan otomatis berhenti karena perulangan while telah dihentikan, yang menandakan seluruh rangkaian operasional pada program leaderboard ini telah ditutup dengan aman.  
+
+## Link Youtube:  
+https://youtu.be/7bwpfgdWe8I
+
 
 
 
