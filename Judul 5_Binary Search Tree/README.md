@@ -168,6 +168,27 @@ __d. Output Program__
 <img width="1502" height="974" alt="Screenshot 2026-05-25 090410" src="https://github.com/user-attachments/assets/7f9fa733-f02a-4599-a752-077e032291f7" />  
 <img width="1499" height="621" alt="Screenshot 2026-05-25 090428" src="https://github.com/user-attachments/assets/7bd8b034-2dc5-4e6b-a49e-61f54606d7b5" />  
 
+__Tampilan Menu utama dan Validasi Kesalahan Pilihan__  
+Saat program pertama kali dijalankan, sistem akan masuk ke dalam fungsi main() dan menampilkan judul === LEADERBOARD SKOR PEMAIN ===. Di bawah judul, program akan menampilkan 7 daftar pilihan menu, yaitu: 1. Tambah Skor, 2. Hapus Skor, 3. Lihat Ranking, 4. Cek Skor Tertinggi/Terendah, 5. Cari Skor Setelahnya (Successor), 6. Cari Skor Sebelumnya (Predecessor), dan 7. Keluar. Setelah daftar menu muncul, program akan menampilkan prompt Pilih:  untuk meminta input angka dari pengguna. Jika pengguna memasukkan input selain angka, program akan mendeteksi kesalahan melalui blok except ValueError dan menampilkan pesan Input tidak valid! Harap masukkan angka.. Jika pengguna memasukkan angka bilangan bulat namun tidak ada dalam rentang 1-7, sistem akan masuk ke logika else paling bawah dan menampilkan pesan Pilihan tidak ada di daftar menu sebagai peringatan, lalu akan kembali menampilkan menu utama dari awal.  
+
+__Proses Tambah Skor (Menu 1)__  
+Apabila pengguna memilih menu 1, program akan menampilkan pesan Masukkan skor baru: . Di sini, pengguna diminta untuk memasukkan nilai skor dalam bentuk angka. Setelah angka dimasukkan, sistem akan menjalankan fungsi game.insert(x) yang secara otomatis menempatkan data tersebut ke dalam struktur Binary Search Tree sesuai dengan aturan BST, di mana nilai yang lebih kecil akan berada di cabang kiri dan nilai yang lebih besar di cabang kanan, menjaga data tetap terorganisir secara otomatis.  
+
+__Proses Hapus Skor (Menu 2)__  
+Jika pengguna memilih menu 2, program akan menampilkan pesan Hapus skor pemain:  untuk meminta skor yang ingin dihapus. Program kemudian menjalankan fungsi game.search(game.root, x) untuk memastikan apakah skor tersebut ada dalam sistem. Jika skor ditemukan, program akan menjalankan fungsi game.delete(x) dan memunculkan pesan Skor [angka] berhasil dihapus.. Namun, jika skor yang dicari tidak ada di dalam leaderboard, maka program akan membatalkan proses penghapusan dan menampilkan pesan Pesan: Skor [angka] tidak ditemukan di leaderboard.  
+
+__Proses Lihat Ranking (Menu 3)__  
+Ketika pengguna memilih pilihan 3, program akan menjalankan fungsi level_order() untuk menampilkan seluruh data skor yang ada dalam sistem secara terurut berdasarkan level pohonnya. Sistem akan memunculkan pesan Skor: [nilai] |  untuk setiap node yang ditemukan. Proses ini menggunakan antrean (queue) untuk memastikan data ditampilkan secara sistematis mulai dari akar (root) ke bawah. Jika saat menu ini dipilih sistem belum memiliki data skor sama sekali, maka program akan mendeteksinya dan menampilkan pesan (Leaderboard kosong).  
+
+__Proses Cek Skor Tertinggi dan Terendah (Menu 4)__  
+Apabila pengguna memilih menu 4, program akan menjalankan fungsi get_min() untuk mencari nilai terkecil dan get_max() untuk mencari nilai terbesar. Sistem akan menampilkan hasilnya ke layar melalui dua pesan: Skor Terendah: [nilai] dan Skor Tertinggi: [nilai]. Sistem melakukan ini dengan menelusuri cabang paling kiri dari root untuk mendapatkan nilai terendah, dan menelusuri cabang paling kanan dari root untuk mendapatkan nilai tertinggi.  
+
+__Proses Cari Successor dan Predecessor (Menu 5 dan 6)__  
+Jika pengguna memilih menu 5, program akan meminta input target skor dan menjalankan fungsi find_successor(). Program akan menampilkan Skor berikutnya: [nilai] jika ditemukan, atau Tidak ditemukan jika tidak ada skor yang lebih besar dari target. Begitu pula jika memilih menu 6, program akan menjalankan find_predecessor() dan menampilkan Skor sebelumnya: [nilai] jika ada skor yang lebih kecil dari target, atau Tidak ditemukan jika tidak ada. Keduanya membantu pengguna memahami posisi skor relatif terhadap nilai lain dalam leaderboard.  
+
+__Proses Keluar Dari Program (Menu 7)__  
+Jika pengguna memilih pilihan 7 pada daftar menu, maka program akan menampilkan pesan Program selesai. ke layar. Setelah pesan ini muncul, program akan otomatis berhenti karena perulangan while telah dihentikan, yang menandakan seluruh rangkaian operasional pada program leaderboard ini telah ditutup dengan aman.
+
 
 
 
