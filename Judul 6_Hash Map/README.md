@@ -1,0 +1,7 @@
+__a. Judul Program__  
+Sistem Manajemen Stok Barang di Toko  
+
+__b. Deskripsi Program__  
+Program ini dikembangkan sebagai solusi untuk mempermudah pengelola toko dalam mengelola dan memantau stok barang secara real-time. Fungsi utama aplikasi ini adalah menyediakan alur kerja yang sistematis bagi pengguna untuk menambah barang baru, memperbarui informasi stok, menghapus data barang yang sudah tidak tersedia, serta melakukan pengecekan ketersediaan produk secara cepat. Melalui sistem ini, pengorganisasian data menjadi jauh lebih efisien dibandingkan cara manual, karena pengguna dapat mengetahui status inventaris, mencari detail barang berdasarkan ID, serta mengelola ketersediaan stok secara instan.
+
+Dalam implementasinya, aplikasi ini menggunakan struktur data Hash Map dengan teknik Separate Chaining. Pilihan metode ini didasarkan pada efisiensi Hash Map dalam mengatur data secara otomatis; setiap ID barang yang masuk akan langsung dipetakan ke bucket yang tepat melalui fungsi hash. Jika terjadi collision (tabrakan data), sistem akan menyimpannya ke dalam linked list pada bucket tersebut, sehingga tidak memerlukan proses pencarian linear yang memakan waktu. Karakteristik ini membuat performa sistem sangat optimal, terutama untuk operasi pencarian, penambahan, maupun penghapusan data. Selain itu, program ini dilengkapi dengan manajemen bucket yang rapi untuk memastikan setiap barang dapat diakses dengan cepat dan akurat, meskipun jumlah stok yang dikelola terus bertambah.
