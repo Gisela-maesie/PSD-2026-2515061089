@@ -122,7 +122,25 @@ __d. Output Program__
 <img width="725" height="498" alt="Screenshot 2026-06-06 144137" src="https://github.com/user-attachments/assets/6c57540e-6675-420b-a42a-edb9eb6b52cb" />  
 <img width="728" height="491" alt="Screenshot 2026-06-06 144201" src="https://github.com/user-attachments/assets/f2ee2777-3767-4d10-9798-94aaa5d47ba5" />  
 <img width="724" height="488" alt="Screenshot 2026-06-06 144223" src="https://github.com/user-attachments/assets/48743ed4-ba5d-49e3-a637-3bec7fc399a5" />  
-<img width="732" height="167" alt="Screenshot 2026-06-06 144241" src="https://github.com/user-attachments/assets/c95e54df-2d10-4ec3-ac2d-022f14b14c78" />
+<img width="732" height="167" alt="Screenshot 2026-06-06 144241" src="https://github.com/user-attachments/assets/c95e54df-2d10-4ec3-ac2d-022f14b14c78" />  
+
+__Menampilkan Menu Utama dan Validasi Kesalahan Pilihan__  
+Saat program dijalankan, sistem masuk ke fungsi main() dan menampilkan judul "--- MENU MANAJEMEN STOK BARANG DI TOKO ---" beserta 5 pilihan menu (Tambah, Cari, Hapus, Lihat Daftar, Keluar). Program meminta input pengguna melalui input("Pilih menu (1-5): "). Jika pengguna memasukkan karakter selain angka untuk ID barang pada menu-menu selanjutnya, sistem menggunakan blok try-except ValueError untuk menangkap kesalahan tersebut dan menampilkan pesan "ID harus berupa angka!", mencegah program crash dan mengembalikan pengguna ke menu utama secara otomatis. Jika pengguna memasukkan angka di luar 1-5, logika else akan menampilkan pesan "Pilihan tidak valid, silakan masukkan pilihan angka 1-5."
+
+__Proses Tambah Barang dan Penanganan Collision (Menu 1)__  
+Jika pengguna memilih menu 1, program meminta input id_brg dan nama. Sistem kemudian memanggil toko.insert(id_brg, nama). Di sini, fungsi hash_function menentukan "rak" (indeks) penyimpanan. Jika ID sudah ada, program melakukan pembaruan (update) nilai dan memberikan status "update". Jika belum ada, sistem membuat Node baru dan menyimpannya menggunakan metode head insertion (menyambungkan node baru ke depan node yang sudah ada di rak tersebut) dan memberikan status "di tambahkan". Jika ada dua ID berbeda yang memiliki hasil bagi (modulo) sama, keduanya tetap tersimpan rapi di rak yang sama dalam bentuk Linked List.
+
+__Proses Pencarian Barang (Menu 2)__  
+Saat memilih menu 2, program meminta input ID yang dicari, lalu memanggil fungsi search(id_brg). Sistem akan menentukan rak berdasarkan hash_function dan melakukan penelusuran (traversal) pada Linked List di rak tersebut selama node tidak kosong. Jika current.key sama dengan ID yang dicari, program mengembalikan nama barang (value). Jika perulangan selesai dan ID tidak ditemukan, sistem menampilkan pesan "Barang dengan ID tersebut tidak ada didalam daftar."
+
+__Proses Penghapusan Barang (Menu 3)__  
+Pada menu 3, program memanggil fungsi remove_key(id_brg). Sistem menelusuri Linked List pada rak yang sesuai dengan bantuan pointer prev (sebelum) dan current (saat ini). Jika ID ditemukan, sistem memutus rantai node tersebut dengan mengarahkan pointer next dari node sebelumnya ke node setelah node yang dihapus (atau mengubah head rak jika yang dihapus adalah node pertama). Jika berhasil, program menampilkan "Barang berhasil dihapus.", namun jika ID tidak ditemukan di Linked List, program memberikan pesan "ID tidak ditemukan, tidak ada barang yang dihapus."
+
+__Proses Menampilkan Seluruh Struktur Barang (Menu 4)__  
+Jika pengguna memilih menu 4, fungsi display() akan dijalankan. Program melakukan perulangan dari rak 0 hingga SIZE-1. Jika sebuah rak tidak kosong, sistem akan menampilkan nomor rak, lalu menelusuri Linked List dari node pertama hingga akhir (menampilkan ID:key(value)), diikuti dengan tanda panah -> dan diakhiri dengan NULL untuk menunjukkan akhir rantai. Jika setelah pengecekan seluruh rak ternyata tidak ada barang yang tersimpan, program akan menampilkan pesan "Stok barang di gudang saat ini kosong."
+
+__Kondisi Keluar dari Program (Menu 5)__  
+Jika pengguna memilih angka 5, program menampilkan pesan "Keluar dari program, program selesai." dan menjalankan perintah break. Perintah ini menghentikan perulangan while True yang membungkus menu utama, sehingga eksekusi program berakhir dengan aman.
 
 
 
