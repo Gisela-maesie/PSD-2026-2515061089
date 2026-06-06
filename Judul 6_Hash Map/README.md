@@ -118,6 +118,16 @@ __c. Source Code__
 - __if name == "main":__ Digunakan untuk memastikan bahwa rangkaian kode ini hanya akan berjalan jika file ini dieksekusi secara langsung
 - __main():__ perintah untuk menjalankan fungsi utaman main() agar program dapat berjalan
 
+__d. Output Program__  
+<img width="725" height="498" alt="Screenshot 2026-06-06 144137" src="https://github.com/user-attachments/assets/6c57540e-6675-420b-a42a-edb9eb6b52cb" />  
+<img width="728" height="491" alt="Screenshot 2026-06-06 144201" src="https://github.com/user-attachments/assets/f2ee2777-3767-4d10-9798-94aaa5d47ba5" />  
+<img width="724" height="488" alt="Screenshot 2026-06-06 144223" src="https://github.com/user-attachments/assets/48743ed4-ba5d-49e3-a637-3bec7fc399a5" />  
+<img width="732" height="167" alt="Screenshot 2026-06-06 144241" src="https://github.com/user-attachments/assets/c95e54df-2d10-4ec3-ac2d-022f14b14c78" />
+
+
+
+
+
 
 
 
