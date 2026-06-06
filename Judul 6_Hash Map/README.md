@@ -115,6 +115,8 @@ __c. Source Code__
 - __break:__ Perintah untuk menghentikan perulangan while True secara paksa, yang menyebabkan program keluar dari menu utama dan alur program berakhir
 - __else:__ Kondisi terakhir yang akan dieksekusi jika pengguna memasukkan angka selain 1, 2, 3, 4, atau 5
 - __print("Pilihan tidak valid, silakan masukkan pilihan angka 1-5."):__ Memberikan pesan tersebut ke layar sebagai peringatan bahwa input yang diberikan tidak sesuai dengan menu yang tersedia
+- __if name == "main":__ Digunakan untuk memastikan bahwa rangkaian kode ini hanya akan berjalan jika file ini dieksekusi secara langsung
+- __main():__ perintah untuk menjalankan fungsi utaman main() agar program dapat berjalan
 
 
 
