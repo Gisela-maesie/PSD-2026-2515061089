@@ -140,7 +140,10 @@ __Proses Menampilkan Seluruh Struktur Barang (Menu 4)__
 Jika pengguna memilih menu 4, fungsi display() akan dijalankan. Program melakukan perulangan dari rak 0 hingga SIZE-1. Jika sebuah rak tidak kosong, sistem akan menampilkan nomor rak, lalu menelusuri Linked List dari node pertama hingga akhir (menampilkan ID:key(value)), diikuti dengan tanda panah -> dan diakhiri dengan NULL untuk menunjukkan akhir rantai. Jika setelah pengecekan seluruh rak ternyata tidak ada barang yang tersimpan, program akan menampilkan pesan "Stok barang di gudang saat ini kosong."
 
 __Kondisi Keluar dari Program (Menu 5)__  
-Jika pengguna memilih angka 5, program menampilkan pesan "Keluar dari program, program selesai." dan menjalankan perintah break. Perintah ini menghentikan perulangan while True yang membungkus menu utama, sehingga eksekusi program berakhir dengan aman.
+Jika pengguna memilih angka 5, program menampilkan pesan "Keluar dari program, program selesai." dan menjalankan perintah break. Perintah ini menghentikan perulangan while True yang membungkus menu utama, sehingga eksekusi program berakhir dengan aman.  
+
+## Link YouTube  
+https://youtu.be/1mXD8ZnvsPw
 
 
 
